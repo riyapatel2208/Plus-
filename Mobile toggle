@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mobile Toggle Menu</title>
+
+    <!-- jQuery (REQUIRED) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .top {
+            position: relative;
+            padding: 15px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bars {
+            cursor: pointer;
+        }
+
+        .mobile-bottom {
+            position: absolute;
+            right: 0;
+            top: 69px;
+            width: 100%;
+            background: #ffffff;
+            z-index: 99;
+            padding: 15px 20px;
+            display: none;
+
+            /* visual polish */
+            border-radius: 0 0 16px 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            animation: slideFade 0.3s ease;
+        }
+
+        .mobile-bottom ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-bottom ul li {
+            border-bottom: 1px solid #eee;
+        }
+
+        .mobile-bottom ul li:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-bottom ul li a {
+            display: flex;
+            align-items: center;
+            padding: 14px 10px;
+            font-size: 18px;
+            color: #00acc1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover / tap effect */
+        .mobile-bottom ul li a:hover {
+            background: rgba(0, 172, 193, 0.1);
+            color: #00838f;
+            border-radius: 10px;
+            padding-left: 16px;
+        }
+
+        /* optional icons spacing */
+        .mobile-bottom ul li a i {
+            margin-right: 12px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+        </div>
+
+        <div class="bars">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+        <div class="mobile-bottom">
+            <ul>
+                <li><a href="./searchpage.html">How It Works</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".bars").on("click", function () {
+                $(".mobile-bottom").stop(true, true).slideToggle(300);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
