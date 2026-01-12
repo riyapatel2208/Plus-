@@ -1,0 +1,97 @@
+ class="slider">
+                <div class="slider-content">
+                    <div class="whole-img">
+                        <a href="#"><img src="./images/photo04.jpg" alt=""></a>
+                        <div class="img-content">
+                            <p>OMET</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Volunteer with Tigers</h3>
+                        <div class="desc">
+                            <img src="./images/volunteer-logo01.png" alt="">
+                            <span>Love Volunteers</span>
+                        </div>
+                        <p>$215/week <span>🔴</span> 1 - 12 weeks duration</p>
+                    </div>
+                </div>
+                <div class="slider-content">
+                    <div class="whole-img">
+                        <a href="#"><img src="./images/photo04.jpg" alt=""></a>
+                        <div class="img-content">
+                            <p>OMET</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Volunteer with Tigers</h3>
+                        <div class="desc">
+                            <img src="./images/volunteer-logo01.png" alt="">
+                            <span>Love Volunteers</span>
+                        </div>
+                        <p>$215/week <span>🔴</span> 1 - 12 weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <div class="pagination">
+        <nav aria-label="page navigation">
+            <ul class="pagination custom-pagination">
+                <li class="page-item"><a class="page-link arrow" href="#" area-table="previous">
+                        <i class="fa-solid fa-chevron-left"></i></i></a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item disabled" style="height: 53px;"><span class="page-link dots">...</span></li>
+                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                <li class="page-item"><a class="page-link arrow" href="#" area-table="next">
+                        <i class="fa-solid fa-chevron-right"></i></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-left">
+                <a href="#"><img src="./images/logo_1.png" alt=""></a>
+            </div>
+            <div class="footer-right">
+                <div class="link-grp">
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a4218e0c32.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            nextArrow: '<i class="fa-solid fa-angle-right"></i></a>',
+            prevArrow: '<i class="fa-solid fa-angle-left"></i></a>'
+        });
+        $(document).ready(function () {
+            $(".bars").click(function () {
+                $(".mobile-bottom").slideToggle(1500);
+            });
+        });
+    </script>
+</body>
+
+</html>
